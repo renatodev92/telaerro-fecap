@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #24604f;
+}
+
+.main {
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center
+}
+
+.logo {
+    margin: 20px;
+}
+
+
+.message h2 {
+    color: #0def7d;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.message p {
+    font-size: 14pt;
+    color: #d9e3de;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login>.btn {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: #0faa75;
+    color: #ffff;
+    text-decoration: none;
+}
+
+.login>.btn:hover {
+    background-color: #080808cc;
+    color: #0def7d;
+}
+
+
+/*Quando a tela for menor que 900px execute o código a seguir.*/
+@media only screen and (max-width: 900px) {
+    .main {
+        width: 90%;
+    }
+
+    .login {
+        display: flex;
+        flex-direction: column;
+    }
+}
